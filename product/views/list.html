@@ -1,0 +1,11 @@
+
+<h1>Product list page</h1>
+<section ng-repeat="product in products" data-id="{{product.listing_id}}">
+  <h3>{{product.title}}</h3>
+  <img ng-src="{{product.img_170x135}}" alt="" />
+  <h4> {{product.price | currency }}</h4>
+  <button class="btn btn-success">Add to cart</button><br>
+  <a href="{{product.url}}">View on Etsy</a><br>
+  <a href="#/product/{{product.listing_id}}">Details</a>
+
+</section>

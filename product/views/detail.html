@@ -1,0 +1,13 @@
+
+<h1>You are on the product detail page</h1>
+<section >
+  <h3>{{product.title}}</h3>
+  <img ng-src="{{product.image}}" alt="" />
+  <h4> {{product.price | currency }}</h4>
+  <p>
+    {{product.description}}
+  </p>
+  <button class="btn btn-success">Add to cart</button><br>
+  <a href="{{product.url}}">View on Etsy</a><br>
+
+</section>
